@@ -1,0 +1,77 @@
+main, header, article, aside, footer{
+    border: 1px solid black;
+}
+
+/*MAIN{*/
+main{
+    display: grid;
+    grid-template-areas:
+    "h h h"
+    "b a j"
+    "f f f";
+    padding: 10px;
+    margin: auto;
+}
+/*}MAIN VÉGE*/
+
+/*HEADER KEZDETE{*/
+header{
+    grid-area: h;
+    margin-bottom: 20px;
+}
+
+header h1{
+    text-align: center;
+    margin: 15px;
+}
+
+header p{
+    margin: 0%;
+}
+/*}HEADER VÉGE*/
+
+/*KÖZÉPSŐ ARTICLE{*/
+article{
+    grid-area: a;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: cornflowerblue;
+}
+
+article img{
+    width: 100%;
+}
+/*}KÖZÉPSŐ ARTICLE VÉGE*/
+
+/*ASIDE ELEMEK{*/
+.bal{
+    grid-area: b;
+}
+
+aside img{
+    width: 100%;
+}
+
+.jobb{
+    grid-area: j;
+}
+/*}ASIDE ELEMEK VÉGE*/
+
+/*LÁBJEGYZÉK{*/
+footer{
+    grid-area: f;
+    margin-top: 20px;
+}
+
+footer p{
+    margin: 0%;
+    background-color: cornflowerblue;
+    text-align: center;
+}
+/*}LÁBJEGYZÉK VÉGE*/
+
+
+
+
+
+
